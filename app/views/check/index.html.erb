@@ -1,0 +1,12 @@
+<h1>Check the status of the site </h1>
+<% form_for(@check, :url => '/checks/new') do |f| %>
+<%=f.error_messages %>
+<%=label_tag :Website%>
+<%=text_field_tag :website %>
+<p >
+<%=submit_tag 'Test' %>
+</p>
+<%end%>
+
+
+<%=yield %>
